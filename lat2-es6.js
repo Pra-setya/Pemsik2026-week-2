@@ -12,18 +12,8 @@ const nilai_new = [99]; //ambil data ke 2, brarti index ke 1
 const array_nilai_tambah = [...nilai_new, nilai]; //ini mau menambahkan
 const tambah_dibelakang = [nilai, ...nilai_new];
 
-console.log(`tambah belakang ${tambah_belakang}`);
+console.log(`tambah belakang: ${tambah_dibelakang}`);
 console.log(`kumpulan array nilai baru: ${array_nilai_tambah}`);
-
-console.log(`Nama: ${namaku}, Umur boss: ${umurku}`);
-
-//spread object = tambah data keyv_value ke object
-const nimku = {nim: "A11.2024.15657"};
-
-const new_mhs = {
-    ...nimku,
-    mhs,
-};
 
 // ====================
 
@@ -38,7 +28,18 @@ const mhs = {
 const nama_kuu = mhs.nama; // ambil value dari key nama, dari object mhs
 const {namaku, umurku, nilaiku} = mhs; //langsung buat banyakdari banyak key
 
-console.log(``) ''
+console.log(`Nama: ${namaku}, Umur boss: ${umurku}`);
+
+//spread object = tambah data keyv_value ke object
+const nimku = {nim: "A11.2024.15657"};
+
+const new_mhs = {
+    ...nimku,
+    mhs,
+};
+
+console.log(new_mhs);
+console.log('');
 
 //array of object = artinya kumpulan object dalam array 
 const list_mhs = [
